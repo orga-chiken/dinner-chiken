@@ -1,0 +1,113 @@
+/*百家乐纸牌UI*/
+.playing-card {
+  width: 100%;
+  height: 100vw;
+  max-width: 996px;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+.playing-card .gambling-table .table-warp {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.playing-card .gambling-table .table-warp .table {
+  margin: 10px;
+  width: calc(8.33333333vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.playing-card .gambling-table .table-warp .table .table-num {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 18px;
+  color: #f1f1f1;
+}
+.playing-card .gambling-table .table-warp .table .table-time {
+  width: 6em;
+  height: 6em;
+  background: #393d49;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 50px #1f212b;
+          box-shadow: inset 0 0 50px #1f212b;
+  border: 1px solid #1f212b;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.playing-card .gambling-table .table-warp .table .table-time .surplus-time {
+  font-weight: bold;
+  line-height: 70px;
+  font-size: 18px;
+}
+.playing-card .gambling-table .table-warp .table .table-time .surplus-mode {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 5em;
+  height: 5em;
+  border-top: 5px solid #009688;
+  border-radius: 50%;
+  -webkit-transform: translate(45deg);
+          transform: translate(45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+html {
+  font-family: sans-serif, "微软雅黑";
+  font-size: 20px;
+  background: #24262f;
+  padding: 0;
+  margin: 0;
+  color: #009688;
+}
+html h2,
+html h3,
+html h1,
+html h4,
+html h5,
+html h6,
+html p,
+html span,
+html b {
+  font-weight: 200;
+}
+@media screen and (min-width: 375px) {
+  html {
+    /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px */
+    font-size: calc(85.8974359%);
+    font-size: calc(1.8974359px);
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    /* 414px-1000px每100像素宽字体增加1px(18px-22px) */
+    font-size: calc(110.35665529%);
+    font-size: calc(15.85665529px);
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+    /* 600px-1000px每100像素宽字体增加1px(20px-24px) */
+    font-size: calc(120%);
+    font-size: calc(15px);
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    /* 1000px往后是每100像素0.5px增加 */
+    font-size: calc(132.1%);
+    font-size: calc(16.6px);
+  }
+}

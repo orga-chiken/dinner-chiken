@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'gameicons';
+  src:  url('../font/gameicons.eot?hx3bcc');
+  src:  url('../font/gameicons.eot?hx3bcc#iefix') format('embedded-opentype'),
+    url('../font/gameicons.ttf?hx3bcc') format('truetype'),
+    url('../font/gameicons.woff?hx3bcc') format('woff'),
+    url('../font/gameicons.svg?hx3bcc#gameicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="game-"], [class*=" game-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gameicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.game-menu:before {
+  content: "\e900";
+}
+.game-recharge:before {
+  content: "\e901";
+}
+.game-left:before {
+  content: "\e902";
+}
+.game-right:before {
+  content: "\e903";
+}
+.game-close:before {
+  content: "\e904";
+}
+.game-vip:before {
+  content: "\e905";
+}
+.game-hot:before {
+  content: "\e906";
+}
+.game-game:before {
+  content: "\e907";
+}
+.game-app-payment:before {
+  content: "\e908";
+}
+.game-wechat-payment:before {
+  content: "\e909";
+}
+.game-mine:before {
+  content: "\e90a";
+}
+.game-my-money:before {
+  content: "\e90b";
+}
+.game-psd-show:before {
+  content: "\e90c";
+}
+.game-credit-payment:before {
+  content: "\e90d";
+}
+.game-psd-hide:before {
+  content: "\e90e";
+}
+.game-game-recharge:before {
+  content: "\e90f";
+}
+.game-wallet:before {
+  content: "\e910";
+}
+.game-selected:before {
+  content: "\e911";
+}
+.game-alipay-payment:before {
+  content: "\e912";
+}
+.game-transfer:before {
+  content: "\e913";
+}
+.game-black-peach:before {
+  content: "\e917";
+}
+.game-mei-flower:before {
+  content: "\e918";
+}
+.game-fan-diamond:before {
+  content: "\e919";
+}
+.game-bet:before {
+  content: "\e97d";
+}
+.game-bet-timing:before {
+  content: "\e97e";
+}
+.game-loading:before {
+  content: "\e97f";
+}
+.game-set:before {
+  content: "\e994";
+}
+.game-red-peach:before {
+  content: "\e9da";
+}
