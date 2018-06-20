@@ -2,8 +2,50 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<meta content="yes" name="apple-mobile-web-app-capable"> 
+	  	<meta content="yes" name="apple-touch-fullscreen">
+	  	<meta content="telephone=no,email=no" name="format-detection"> 
+	    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="../dest/font.css"/>
+    		<link rel="stylesheet" href="../dest/akm.css" />
 	</head>
 	<body>
+		<div class="container">
+			<div class="times-ticket times-bg">
+				<h2 class="h2-title">我去，整个UI，花这多时间</h2>
+				<div class="fix m15">
+                    <label class="left f14" for="idName">你的名字<span class="red abs">*</span></label>
+                    <div class="ovh">
+                        <input type="tel" id="idName" class="ui-input" size="40" name="idName" required="">
+                    </div>
+                </div>
+                <div class="fix m15">
+                    <label class="left f14" for="idTel">手机号码<span class="red abs">*</span></label>
+                    <div class="ovh">
+                        <input type="tel" id="idTel" class="ui-input" size="40" name="tel" required="">
+                    </div>
+                </div>
+                <div class="fix m15">
+                    <label class="left f14" for="idPsd">登录密码<span class="red abs">*</span></label>
+                    <div class="ovh">
+                        <input type="tel" id="idPsd" class="ui-input" size="40" name="idPsd" required="">
+                    </div>
+                </div>
+                <div class="fix m15">
+                    <label class="left f14" for="idConPsd">确认密码<span class="red abs">*</span></label>
+                    <div class="ovh">
+                        <input type="tel" id="idConPsd" class="ui-input" size="40" name="idConPsd" required="">
+                    </div>
+                </div>
+                <div class="cell">
+                    <label for="formSubmit" class="ui-button ui-button-primary ui-button-block">注册</label>
+                </div>
+                <div class="line"><span>更多的登录方式</span></div>
+                <a href="" class="ui-button ui-button-block has-account-btn">巳有帐号登录</a>
+                <p class="span">登录即表示你同意网站的<a class="a-link" href="">《服务条款》</a></p>
+			</div>
+		</div>
+		<script src="../js/common/fontMedia.js"></script>
 	</body>
 </html>

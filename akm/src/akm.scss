@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+@import 'reset';
+@import 'variable';
+@import 'ui';
+
+
+/*时时彩*/
+.times-ticket{
+    padding: 8em;
+    height: auto;
+    .fix{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        label{
+            font-size: $font-size-mid;
+            padding-right: 2em;
+        }
+    }
+    .m15{
+        margin-bottom: 1em;
+    }
+    .cell{
+        margin: 10em 0 4em;
+        display: flex;
+        justify-content: center;
+    }
+    .line{
+        height: 1px;
+        width: 80%;
+        background: #03523e;
+        display: block;
+        margin: auto;
+        position: relative;
+        span{
+            display: block;
+            background: $color-gambling;
+            width: 100px;
+            height: auto;
+            padding: 4px 10px;
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50px);
+        }
+    }
+    .has-account-btn{
+        margin: 4em auto 10px;
+    }
+    .span{
+        text-align: center;
+    }
+}
+/*百家乐纸牌UI*/
+.playing-card{
+    width: 100%;
+    height: 100vw;
+    max-width: 996px;
+    display: block;
+    margin: auto;
+    position: relative;
+    //局号UI
+    .gambling-table{
+        .table-warp{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            .table{
+                margin: 10px;
+                width: calc(100vw/12);
+                display: flex;
+                flex-direction: column;
+                .table-num{
+                    font-weight: $font-weight-mid;
+                    text-align: center;margin-bottom: 1em;
+                    font-size: $font-size-mid;
+                    color: $color-f1;
+                }
+                .table-time{
+                    width: 6em;
+                    height: 6em;
+                    background: $color-gambling;
+                    border-radius: 50%;
+                    box-shadow: inset 0 0 50px $color-gambling-deeper; 
+                    border: 1px solid $color-gambling-deeper;
+                    display: block;
+                    margin: auto;
+                    cursor: pointer;
+                    position: relative;
+                    overflow: hidden;
+                    .surplus-time{
+                        font-weight: $font-weight-big;
+                        line-height: 70px;
+                        font-size: $font-size-mid;
+                    }
+                    .surplus-mode{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: 5em;
+                        height: 5em;
+                        border-top: 5px solid $color-pei;
+                        border-radius: 50%;
+                        transform: translate(45deg);
+                        transform-origin: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+html {
+    font-family: sans-serif,"微软雅黑";
+    font-size: 20px;
+    background: $color-zhu;
+    padding: 0;
+    margin: 0;
+    color: $color-pei;
+    h2,h3,h1,h4,h5,h6,p,span,b{
+        font-weight: $font-weight-small;
+    }
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+    @media (min-width: 992px) {
+      .container {
+        width: 970px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px */
+        font-size: calc(100% + 2 * (100vw - 375px) / 39);
+        font-size: calc(16px + 2 * (100vw - 375px) / 39);
+    }
+}
+@media screen and (min-width: 414px) {
+    html {
+        /* 414px-1000px每100像素宽字体增加1px(18px-22px) */
+        font-size: calc(112.5% + 4 * (100vw - 414px) / 586);
+        font-size: calc(18px + 4 * (100vw - 414px) / 586);
+    }
+}
+@media screen and (min-width: 600px) {
+    html {
+        /* 600px-1000px每100像素宽字体增加1px(20px-24px) */
+        font-size: calc(125% + 4 * (100vw - 600px) / 400);
+        font-size: calc(20px + 4 * (100vw - 600px) / 400);
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        /* 1000px往后是每100像素0.5px增加 */
+        font-size: calc(137.5% + 6 * (100vw - 1000px) / 1000);
+        font-size: calc(22px + 6 * (100vw - 1000px) / 1000);
+    }
+}
+@charset "utf-8";
+@-webkit-keyframes tinydown {
+  0%,
+  5% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes tinydown {
+  0%,
+  5% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes falldown {
+  form {
+    -webkit-transform: translateY(-5px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes falldown {
+  form {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes raiseup {
+  from {
+    -webkit-transform: translateY(5px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes raiseup {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+@-webkit-keyframes spin2 {
+    0% {
+        -webkit-transform: rotate(-360deg);
+    }
+    100% {
+        -webkit-transform: rotate(0);
+    }
+}
+@keyframes spin2 {
+    0% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+@-webkit-keyframes bounceIn {
+    0% { -webkit-transform: scale(0); }
+    75% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+@keyframes bounceIn {
+    0% { transform: scale(0); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+
+
+
+
