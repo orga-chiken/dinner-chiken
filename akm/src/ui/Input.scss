@@ -47,7 +47,7 @@ input.ui-input,
   padding: 9px 8px; 
   border: 1px solid $borderNormal;
   border-radius: 4px;
-  background-color: $white;
+  background-color: $input-bg;
   font-size: 14px;
   outline: none;
   color: $dark;
@@ -123,7 +123,6 @@ div.ui-input > input {
 .ui-input-x:hover > .ui-input {
   border-color: $borderHover;
 }
-/* 注意相邻位置，如果文本域前后位置发生变化，表单验证组件Validate.js 中 getTarget那里逻辑也要变化 */
 .ui-input-x > input:focus ~ .ui-input {
   border-color: $borderFocus;
 }
@@ -164,6 +163,7 @@ span.ui-search-input {
 .ui-search-input > .error ~ .ui-icon-search,
 .ui-search-input > .error:focus ~ .ui-icon-search {
   background-color: $red;
+  border: 2px solid;
 }
 
 

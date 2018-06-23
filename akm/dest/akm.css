@@ -410,7 +410,7 @@ input.ui-input,
   padding: 9px 8px;
   border: 1px solid #d0d0d5;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #85a594;
   font-size: 14px;
   outline: none;
   color: #4c5161;
@@ -487,7 +487,6 @@ div.ui-input > input {
 .ui-input-x:hover > .ui-input {
   border-color: #ababaf; }
 
-/* 注意相邻位置，如果文本域前后位置发生变化，表单验证组件Validate.js 中 getTarget那里逻辑也要变化 */
 .ui-input-x > input:focus ~ .ui-input {
   border-color: #00a5e0; }
 
@@ -525,7 +524,8 @@ span.ui-search-input {
 
 .ui-search-input > .error ~ .ui-icon-search,
 .ui-search-input > .error:focus ~ .ui-icon-search {
-  background-color: #f4615c; }
+  background-color: #f4615c;
+  border: 2px solid; }
 
 /* IE使用png图片, 虽然IE9+支持SVG，但是貌似渲染太慢，会暴露色块 */
 .ui-icon-search,
@@ -673,6 +673,9 @@ span.ui-search-right > .ui-placeholder {
 .times-ticket {
   padding: 8em;
   height: auto; }
+  @media screen and (max-width: 768px) {
+    .times-ticket {
+      padding: 4em 15px 0; } }
   .times-ticket .fix {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -687,6 +690,18 @@ span.ui-search-right > .ui-placeholder {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media screen and (max-width: 768px) {
+      .times-ticket .fix {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
     .times-ticket .fix label {
       font-size: 18px;
       padding-right: 2em; }
@@ -700,6 +715,17 @@ span.ui-search-right > .ui-placeholder {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  .times-ticket .login-cell {
+    margin: 10em 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .times-ticket .forgot-psd {
+    margin-top: 20px;
+    margin-bottom: 4em; }
   .times-ticket .line {
     height: 1px;
     width: 80%;
