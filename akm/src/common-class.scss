@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import 'variable';
+
+.com-line{
+    width: 50%;
+    height: 1px;
+    background: $gray;
+    display: block;
+    margin: 10px auto 2em;
+}
+.a-link{
+    color: $color-pei;
+}
+.gray{
+    color: $gray;
+}
+.wuwu{
+    color: $color-ww;
+}
+body{
+    font-size: $font-size-big;
+}
+h2{
+    font-size: $font-size-2em;
+    text-align: center;
+}
+h3{
+    font-size: $font-size-point2em;
+}
+body, .dark { 
+    color: $color-pei; 
+}   
+a, .blue, a.dark:hover { color: $blue; }
+a:hover { color: $darkblue; }

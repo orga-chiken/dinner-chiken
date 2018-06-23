@@ -93,22 +93,7 @@ $borderRadius: 4px;
 
 // 图片背景路径
 $urlImage: 'images'!default;
-body{
-    font-size: $font-size-big;
-}
-h2{
-    font-size: $font-size-2em;
-    text-align: center;
-    margin-bottom: 1em;
-}
-h3{
-    font-size: $font-size-point2em;
-}
-body, .dark { 
-    color: $color-pei; 
-}   
-a, .blue, a.dark:hover { color: $blue; }
-a:hover { color: $darkblue; }
+
 .gray { color: $gray; } 
 .white { color: $white; } 
 .green { color: $green; }
@@ -125,10 +110,5 @@ a:hover { color: $darkblue; }
 .bg-light { background-color: $light; }
 .bg-gray { background-color: $gray; }
 .bg-white { background-color: $white; }
-.a-link{
-    color: $color-pei;
-}
-.span{
-    color: $gray;
-}
+
 

@@ -35,26 +35,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 /*主色*/
-body {
-  font-size: 20px; }
-
-h2 {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 1em; }
-
-h3 {
-  font-size: 1.2em; }
-
-body, .dark {
-  color: #009688; }
-
-a, .blue, a.dark:hover {
-  color: #00a5e0; }
-
-a:hover {
-  color: #008cbf; }
-
 .gray {
   color: #a2a9b6; }
 
@@ -97,37 +77,11 @@ a:hover {
 
 .bg-white {
   background-color: #fff; }
-
-.a-link {
-  color: #009688; }
-
-.span {
-  color: #a2a9b6; }
 
 /**
   *  李诚，UI文件你先不要放开，我用哪个放哪个吧，我现在还没配好postcss，编译的还不全 
  */
 /*主色*/
-body {
-  font-size: 20px; }
-
-h2 {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 1em; }
-
-h3 {
-  font-size: 1.2em; }
-
-body, .dark {
-  color: #009688; }
-
-a, .blue, a.dark:hover {
-  color: #00a5e0; }
-
-a:hover {
-  color: #008cbf; }
-
 .gray {
   color: #a2a9b6; }
 
@@ -171,11 +125,254 @@ a:hover {
 .bg-white {
   background-color: #fff; }
 
-.a-link {
-  color: #009688; }
+input[type=radio] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  /* IE8+ */
+  *left: -999px; }
 
-.span {
+.ui-radio {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(208, 208, 213, 0.99);
+  /* IE7-IE8 ignore this */
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: -.5ex;
+  *vertical-align: 0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-transition: border-color .2s;
+  transition: border-color .2s;
+  overflow: hidden; }
+
+:not(:disabled) + .ui-radio:hover {
+  border-color: #ababaf; }
+
+.ui-radio::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 4px auto 0;
+  border-radius: 50%;
+  background-color: #00a5e0;
+  visibility: hidden; }
+
+:checked + .ui-radio::before {
+  visibility: visible;
+  -webkit-animation: bounceIn .2s;
+  animation: bounceIn .2s; }
+
+:disabled + .ui-radio,
+.ui-radio.disabled {
+  /* 与设计师沟通，这里边框色值提高，否则不怎么好的显示器和背景色混在一起都看不出来 */
+  border-color: #ababaf;
+  opacity: .38; }
+
+/* error */
+.error.ui-radio {
+  border-color: #f4615c; }
+
+/*IE7, IE8 使用图片作UI*/
+@media \0screen\,screen\9 {
+  .ui-radio {
+    background: url(images/Radio/radio.png) no-repeat; }
+
+  .ui-radio:hover {
+    background-position: 0 -20px; }
+
+  [checked] + .ui-radio {
+    background-position: 0 -40px; }
+
+  [defaultChecked] + .ui-radio {
+    background-position: 0 -40px; }
+
+  [checked] + .ui-radio:hover,
+  [checked][disabled] + .ui-radio {
+    /* disabled态使用高亮边框 */
+    background-position: 0 -60px; }
+
+  [defaultChecked] + .ui-radio:hover,
+  [defaultChecked][disabled] + .ui-radio {
+    /* disabled态使用高亮边框 */
+    background-position: 0 -60px; }
+
+  [disabled] + .ui-radio {
+    background-position: 0 -20px;
+    filter: alpha(opacity=38); } }
+/*主色*/
+.gray {
   color: #a2a9b6; }
+
+.white {
+  color: #fff; }
+
+.green {
+  color: #01cf97; }
+
+.orange {
+  color: #f28c48; }
+
+.red {
+  color: #f4615c; }
+
+.light {
+  color: #f7f9fa; }
+
+/* 背景色 仅作为色块背景时候使用*/
+.bg-dark {
+  background-color: #4c5161; }
+
+.bg-blue {
+  background-color: #00a5e0; }
+
+.bg-green {
+  background-color: #01cf97; }
+
+.bg-orange {
+  background-color: #f28c48; }
+
+.bg-red {
+  background-color: #f4615c; }
+
+.bg-light {
+  background-color: #f7f9fa; }
+
+.bg-gray {
+  background-color: #a2a9b6; }
+
+.bg-white {
+  background-color: #fff; }
+
+input[type=checkbox] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  /* IE8+ */
+  *left: -999px; }
+
+/* 无绝对定位的模拟生成实现 */
+.ui-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: inset 0 1px, inset 1px 0, inset -1px 0, inset 0 -1px;
+          box-shadow: inset 0 1px, inset 1px 0, inset -1px 0, inset 0 -1px;
+  background-color: #fff;
+  background-clip: content-box;
+  color: #d0d0d5;
+  -webkit-transition: color .2s, background-color .1s;
+  transition: color .2s, background-color .1s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  vertical-align: -5px;
+  *vertical-align: 0;
+  overflow: hidden; }
+
+:not(:disabled) + .ui-checkbox:hover,
+:disabled + .ui-checkbox {
+  color: #ababaf; }
+
+:checked + .ui-checkbox,
+:checked + .ui-checkbox:hover {
+  color: #00a5e0;
+  background-color: #00a5e0; }
+
+.ui-checkbox::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xNDcuNTY3LDY3LjU3NWMtMy45NzgtMy4yNDEtNC4zNTYtMy4zMzctOC45LTUuNjM5Yy0yLjA0NC0xLjA0NC01LjA1NywxLjY0NS02LjUzLDMuNjM1TDkyLDExNy43MjgNCglMNjUuODUxLDgzLjk3M2MtMS40NzktMS45ODgtNC4yMDYtMi43Mi02LjI1MS0xLjc4MmMtNC42NTgsMi40MDctNC4xODksMi4zMjYtOC4xNjgsNS40NjZjLTEuODE3LDEuNDY2LTEuOTMyLDQuMDgyLTAuNDU2LDYuMDY1DQoJYzAsMCwyOC4xODMsMzYuNDk5LDMxLjU5Miw0MC44OTZjNC45OTksNi4yNzUsMTQuMDksNS45NjUsMTguODY0LDBjMy41Mi00LjQ5OCw0Ni41OS02MS4wNzgsNDYuNTktNjEuMDc4DQoJQzE0OS40OTksNzEuNTQ5LDE0OS4zODUsNjguOTM3LDE0Ny41NjcsNjcuNTc1eiIvPg0KPC9zdmc+DQo=) no-repeat center;
+  background-size: 20px 20px;
+  visibility: hidden; }
+
+:checked + .ui-checkbox::after {
+  visibility: visible;
+  -webkit-animation: bounceIn .2s;
+  animation: bounceIn .2s; }
+
+:disabled + .ui-checkbox {
+  opacity: .38; }
+
+/* error */
+.error.ui-checkbox {
+  color: #f4615c; }
+
+/*IE7, IE8 使用图片作UI*/
+@media \0screen\,screen\9 {
+  .ui-checkbox {
+    background: url(images/Checkbox/checkbox.png) no-repeat; }
+
+  .ui-checkbox:hover {
+    background-position: 0 -20px; }
+
+  [checked] + .ui-checkbox,
+  [checked][disabled] + .ui-checkbox {
+    background-position: 0 -40px; }
+
+  [defaultChecked] + .ui-checkbox,
+  [defaultChecked][disabled] + .ui-checkbox {
+    background-position: 0 -40px; }
+
+  [disabled] + .ui-checkbox {
+    /* disabled态使用高亮边框 */
+    background-position: 0 -20px;
+    filter: alpha(opacity=38); } }
+/*主色*/
+.gray {
+  color: #a2a9b6; }
+
+.white {
+  color: #fff; }
+
+.green {
+  color: #01cf97; }
+
+.orange {
+  color: #f28c48; }
+
+.red {
+  color: #f4615c; }
+
+.light {
+  color: #f7f9fa; }
+
+/* 背景色 仅作为色块背景时候使用*/
+.bg-dark {
+  background-color: #4c5161; }
+
+.bg-blue {
+  background-color: #00a5e0; }
+
+.bg-green {
+  background-color: #01cf97; }
+
+.bg-orange {
+  background-color: #f28c48; }
+
+.bg-red {
+  background-color: #f4615c; }
+
+.bg-light {
+  background-color: #f7f9fa; }
+
+.bg-gray {
+  background-color: #a2a9b6; }
+
+.bg-white {
+  background-color: #fff; }
 
 .ui-button {
   display: inline-block;
@@ -300,26 +497,6 @@ div.ui-button {
     vertical-align: top;
     overflow: hidden; } }
 /*主色*/
-body {
-  font-size: 20px; }
-
-h2 {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 1em; }
-
-h3 {
-  font-size: 1.2em; }
-
-body, .dark {
-  color: #009688; }
-
-a, .blue, a.dark:hover {
-  color: #00a5e0; }
-
-a:hover {
-  color: #008cbf; }
-
 .gray {
   color: #a2a9b6; }
 
@@ -363,12 +540,6 @@ a:hover {
 .bg-white {
   background-color: #fff; }
 
-.a-link {
-  color: #009688; }
-
-.span {
-  color: #a2a9b6; }
-
 /*disabled X for IE */
 input:not([type=search])::-ms-clear {
   display: none; }
@@ -410,7 +581,7 @@ input.ui-input,
   padding: 9px 8px;
   border: 1px solid #d0d0d5;
   border-radius: 4px;
-  background-color: #85a594;
+  background-color: #f7f9fa;
   font-size: 14px;
   outline: none;
   color: #4c5161;
@@ -669,13 +840,109 @@ span.ui-search-right > .ui-placeholder {
 .ui-input > .error {
   border-color: #f4615c !important; }
 
+/*主色*/
+.gray {
+  color: #a2a9b6; }
+
+.white {
+  color: #fff; }
+
+.green {
+  color: #01cf97; }
+
+.orange {
+  color: #f28c48; }
+
+.red {
+  color: #f4615c; }
+
+.light {
+  color: #f7f9fa; }
+
+/* 背景色 仅作为色块背景时候使用*/
+.bg-dark {
+  background-color: #4c5161; }
+
+.bg-blue {
+  background-color: #00a5e0; }
+
+.bg-green {
+  background-color: #01cf97; }
+
+.bg-orange {
+  background-color: #f28c48; }
+
+.bg-red {
+  background-color: #f4615c; }
+
+.bg-light {
+  background-color: #f7f9fa; }
+
+.bg-gray {
+  background-color: #a2a9b6; }
+
+.bg-white {
+  background-color: #fff; }
+
+.com-line {
+  width: 50%;
+  height: 1px;
+  background: #a2a9b6;
+  display: block;
+  margin: 10px auto 2em; }
+
+.a-link {
+  color: #009688; }
+
+.gray {
+  color: #a2a9b6; }
+
+.wuwu {
+  color: #555; }
+
+body {
+  font-size: 20px; }
+
+h2 {
+  font-size: 2em;
+  text-align: center; }
+
+h3 {
+  font-size: 1.2em; }
+
+body, .dark {
+  color: #009688; }
+
+a, .blue, a.dark:hover {
+  color: #00a5e0; }
+
+a:hover {
+  color: #008cbf; }
+
 /*时时彩*/
 .times-ticket {
   padding: 8em;
-  height: auto; }
+  height: auto;
+  /*注册*/ }
   @media screen and (max-width: 768px) {
     .times-ticket {
       padding: 4em 15px 0; } }
+  .times-ticket .user-account, .times-ticket .user-info {
+    max-width: 768px;
+    display: block;
+    margin: auto; }
+  .times-ticket .user-account {
+    margin-bottom: 4em; }
+  .times-ticket .required-info {
+    text-align: left;
+    width: 20%;
+    display: block;
+    margin: auto; }
+  .times-ticket .user-protocol {
+    text-align: center;
+    display: block;
+    width: 40%;
+    margin: 2em auto 6em; }
   .times-ticket .fix {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -715,6 +982,14 @@ span.ui-search-right > .ui-placeholder {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  .times-ticket .register-cell {
+    margin: 4em 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .times-ticket .login-cell {
     margin: 10em 0 10px;
     display: -webkit-box;
@@ -746,7 +1021,7 @@ span.ui-search-right > .ui-placeholder {
               transform: translateX(-50px); }
   .times-ticket .has-account-btn {
     margin: 4em auto 10px; }
-  .times-ticket .span {
+  .times-ticket .register-info {
     text-align: center; }
 
 /*百家乐纸牌UI*/

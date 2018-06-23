@@ -13,39 +13,80 @@
 	<body>
 		<div class="container">
 			<div class="times-ticket times-bg">
-				<h2 class="h2-title">注册帐号</h2>
-				<div class="fix m15">
-                    <label class="left f14" for="idName">你的名字<span class="red abs">*</span></label>
-                    <div class="ovh">
-                        <input type="tel" id="idName" class="ui-input error" size="40" name="idName" required="">
-                    </div>
+				<div class="user-account">
+					<h2 class="h2-title">注册帐号</h2>
+				    <div class="com-line"></div>
+					<div class="fix m15">
+	                    <label class="left f14" for="idAaccount ">登录帐号<span class="red abs">*</span></label>
+	                    <div class="ovh">
+	                        <input type="tel" id="idAaccount" class="ui-input" size="40" name="idAaccount" required="" placeholder="账号为字母开头，6-12位的字母与数字组合！">
+	                    </div>
+	                </div>
+	                <div class="fix m15">
+	                    <label class="left f14" for="idPsd">登录密码<span class="red abs">*</span></label>
+	                    <div class="ovh">
+	                        <input type="tel" id="idPsd" class="ui-input" size="40" name="idPsd" required="" placeholder="密码为6-12位字母与数字的组合！">
+	                    </div>
+	                </div>
+	                <div class="fix m15">
+	                    <label class="left f14" for="idConPsd">确认密码<span class="red abs">*</span></label>
+	                    <div class="ovh">
+	                        <input type="tel" id="idConPsd" class="ui-input" size="40" name="idConPsd" required="">
+	                    </div>
+	                </div>
+	                <div class="fix m15">
+	                    <label class="left f14" for="idSavePsd">安全校验<span class="red abs">*</span></label>
+	                    <div class="ovh">
+	                        <input type="tel" id="idSavePsd" class="ui-input" size="40" name="idSavePsd" required="">
+	                    </div>
+	                </div>
+				</div>
+                <div class="user-info">
+                	<h2 class="h2-title">会员信息</h2>
+					<div class="com-line"></div>
+					<div class="fix m15">
+	                    <label class="left f14" for="idName">真实姓名<span class="red abs">*</span></label>
+	                    <div class="ovh">
+	                        <input type="tel" id="idName" class="ui-input" size="40" name="idName" required="" placeholder="必须与您的银行账户名称相同，否则不能出款">
+	                    </div>
+	                </div>
+					<div class="fix m15">
+	                    <label class="left f14" for="idTel">手机号码<span class="red abs">*</span></label>
+	                    <div class="ovh">
+	                        <input type="tel" id="idTel" class="ui-input" size="40" name="tel" required="" placeholder="取回登入密码的唯一途径，请务必真实！">
+	                    </div>
+	                </div>
+	                <div class="fix m15">
+	                    <label class="left f14" for="idTakeMoney">取款密码<span class="red abs">*</span></label>
+	                    <div class="ovh">
+	                        <input type="tel" id="idTakeMoney" class="ui-input" size="40" name="idTakeMoney" required="" placeholder="请输入四位纯数字密码">
+	                    </div>
+	                </div>
+	                <div class="fix m15">
+	                    <label class="left f14" for="idEmail">常用邮箱<span class="red abs">&nbsp;</span></label>
+	                    <div class="ovh">
+	                        <input type="tel" id="idEmail" class="ui-input" size="40" name="idEmail" required="">
+	                    </div>
+	                </div>
                 </div>
-                <div class="fix m15">
-                    <label class="left f14" for="idTel">手机号码<span class="red abs">*</span></label>
-                    <div class="ovh">
-                        <input type="tel" id="idTel" class="ui-input" size="40" name="tel" required="">
-                    </div>
-                </div>
-                <div class="fix m15">
-                    <label class="left f14" for="idPsd">登录密码<span class="red abs">*</span></label>
-                    <div class="ovh">
-                        <input type="tel" id="idPsd" class="ui-input" size="40" name="idPsd" required="">
-                    </div>
-                </div>
-                <div class="fix m15">
-                    <label class="left f14" for="idConPsd">确认密码<span class="red abs">*</span></label>
-                    <div class="ovh">
-                        <input type="tel" id="idConPsd" class="ui-input" size="40" name="idConPsd" required="">
-                    </div>
-                </div>
-                <div class="cell">
+                <p class="gray required-info">*号为必填项</p>
+                
+                <div class="register-cell">
                     <label for="formSubmit" class="ui-button ui-button-primary ui-button-block">注册</label>
+                </div>
+                <div class="user-protocol">
+                	<label for="protocol" class="ui-checkbox"></label>
+                	<label class="wuwu" for="protocol">我确定所提供的信息都是准确的，我已经年满18周岁，我已经阅读并接受相关条款和隐私协议。</label>
                 </div>
                 <div class="line"><span>更多的登录方式</span></div>
                 <a href="" class="ui-button ui-button-block has-account-btn">巳有帐号登录</a>
-                <p class="span">登录即表示你同意网站的<a class="a-link" href="">《服务条款》</a></p>
+                <p class="gray register-info">登录即表示你同意网站的<a class="a-link" href="">《服务条款》</a></p>
 			</div>
 		</div>
+		<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/common/jquery.class.min.js" ></script>
 		<script src="../js/common/fontMedia.js"></script>
+		<script type="text/javascript" src="../js/common/ui/ui/Checkbox.js"></script>
+		<script type="text/javascript" src="../js/common/ui/ui/Radio.js"></script>
 	</body>
 </html>
