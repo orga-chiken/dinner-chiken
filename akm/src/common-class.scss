@@ -30,5 +30,21 @@ h3{
 body, .dark { 
     color: $color-pei; 
 }   
-a, .blue, a.dark:hover { color: $blue; }
+a, .blue, 
+a.dark:hover
+ { 
+     color: $blue; 
+ }
 a:hover { color: $darkblue; }
+.icon-color{
+    color: $gray;
+    &:hover{
+       color: $green; 
+       transition: all .5s ease-in;
+    }
+}
+.icon-size{
+    font-size: $font-size-point4em;
+    line-height: 1.5;
+    padding-right: 6px;
+}

@@ -39,7 +39,7 @@ input[type=checkbox] {
 :checked + .ui-checkbox,
 :checked + .ui-checkbox:hover {
 	color: $borderFocus;
-	background-color: $backgroundBlue;
+	background-color: $color-pei;
 }
 
 .ui-checkbox::after {
