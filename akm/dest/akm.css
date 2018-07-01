@@ -374,6 +374,93 @@ input[type=checkbox] {
 .bg-white {
   background-color: #fff; }
 
+.stage, .times-ticket .game-container .shishi-winning-numbers .shi-winning-warp .winning-num-list .item-winning-num {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  -webkit-perspective: 1200px;
+          perspective: 1200px;
+  -webkit-perspective-origin: 50% 50%;
+          perspective-origin: 50% 50%; }
+  .stage .ball, .times-ticket .game-container .shishi-winning-numbers .shi-winning-warp .winning-num-list .item-winning-num .ball {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 50% 120%, #03523e, #00dba2 80%, #01cf97 100%); }
+    .stage .ball:before, .times-ticket .game-container .shishi-winning-numbers .shi-winning-warp .winning-num-list .item-winning-num .ball:before {
+      content: "";
+      position: absolute;
+      background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+      border-radius: 50%;
+      bottom: 2.5%;
+      left: 5%;
+      opacity: 0.6;
+      height: 100%;
+      width: 90%;
+      -webkit-filter: blur(5px);
+      z-index: 2; }
+    .stage .ball .num, .times-ticket .game-container .shishi-winning-numbers .shi-winning-warp .winning-num-list .item-winning-num .ball .num {
+      font-size: 1.2rem;
+      font-weight: bold;
+      line-height: 50px;
+      text-align: center;
+      color: #03523e; }
+    .stage .ball .shadow, .times-ticket .game-container .shishi-winning-numbers .shi-winning-warp .winning-num-list .item-winning-num .ball .shadow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+      -webkit-transform: rotateX(90deg) translateZ(-33px) translateX(-32px);
+              transform: rotateX(90deg) translateZ(-33px) translateX(-32px);
+      z-index: -1; }
+
+/*主色*/
+.gray {
+  color: #a2a9b6; }
+
+.white {
+  color: #fff; }
+
+.green {
+  color: #01cf97; }
+
+.orange {
+  color: #f28c48; }
+
+.red {
+  color: #f4615c; }
+
+.light {
+  color: #f7f9fa; }
+
+/* 背景色 仅作为色块背景时候使用*/
+.bg-dark {
+  background-color: #4c5161; }
+
+.bg-blue {
+  background-color: #00a5e0; }
+
+.bg-green {
+  background-color: #01cf97; }
+
+.bg-orange {
+  background-color: #f28c48; }
+
+.bg-red {
+  background-color: #f4615c; }
+
+.bg-light {
+  background-color: #f7f9fa; }
+
+.bg-gray {
+  background-color: #a2a9b6; }
+
+.bg-white {
+  background-color: #fff; }
+
 .ui-button {
   display: inline-block;
   line-height: 1.42858;
@@ -932,6 +1019,50 @@ a:hover {
   line-height: 1.5;
   padding-right: 6px; }
 
+/*左侧公共菜单*/
+.navigation-bg {
+  background: rgba(0, 0, 0, 0.6); }
+
+.left-navigation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  -webkit-transform: translateX(-200vw);
+          transform: translateX(-200vw);
+  -webkit-transition: all .5s ease-in .01s;
+  transition: all .5s ease-in .01s; }
+  .left-navigation .left-navigation-width {
+    width: 60%;
+    height: 100%;
+    background: #4c5161; }
+    .left-navigation .left-navigation-width .navigation-menu {
+      height: 50px;
+      background: #f7f9fa;
+      color: #4c5161;
+      line-height: 50px;
+      padding: 0 10px;
+      font-weight: 400; }
+    .left-navigation .left-navigation-width .navigation-list .navigation-item {
+      padding: 4px 10px;
+      line-height: 1.8;
+      border-bottom: 1px solid #4c5161;
+      background: #eee;
+      color: #4c5161;
+      font-size: 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .left-navigation .left-navigation-width .navigation-list .navigation-item .icon-color {
+        padding-right: 12px;
+        color: #f4615c; }
+
+.left-navigation-show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
 /*时时彩*/
 .times-ticket {
   padding: 8em;
@@ -1079,6 +1210,11 @@ a:hover {
           color: #01cf97;
           -webkit-transition: all .5s ease-in;
           transition: all .5s ease-in; }
+    .times-ticket .nav-bar .game-bars {
+      display: none; }
+      @media screen and (max-width: 768px) {
+        .times-ticket .nav-bar .game-bars {
+          display: block; } }
     .times-ticket .nav-bar .title h3 {
       color: #a2a9b6;
       font-size: 18px;
@@ -1124,6 +1260,128 @@ a:hover {
             flex-wrap: wrap;
         margin: 0;
         padding: 0; } }
+    .times-ticket .game-container .shishi-winning-numbers {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center;
+      padding: 1em 0 0;
+      border-bottom: 1px solid #4c5161;
+      margin-bottom: 3em; }
+      .times-ticket .game-container .shishi-winning-numbers .shi-winning-warp .winning-title {
+        line-height: 1.8; }
+      .times-ticket .game-container .shishi-winning-numbers .shi-winning-warp .winning-num-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
+        .times-ticket .game-container .shishi-winning-numbers .shi-winning-warp .winning-num-list .item-winning-num {
+          -webkit-box-flex: 1;
+              -ms-flex: 1 1 auto;
+                  flex: 1 1 auto;
+          width: 100%;
+          height: auto;
+          margin: 20px 10px; }
+    .times-ticket .game-container .shi-closing-time {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .times-ticket .game-container .shi-closing-time .closing-title {
+        text-align: center; }
+      .times-ticket .game-container .shi-closing-time .plate-time {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin: 2em 0; }
+        .times-ticket .game-container .shi-closing-time .plate-time .minute, .times-ticket .game-container .shi-closing-time .plate-time .second {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .times-ticket .game-container .shi-closing-time .plate-time .minute .item-plate, .times-ticket .game-container .shi-closing-time .plate-time .second .item-plate {
+            width: 50px;
+            height: 80px;
+            background: #010101;
+            color: #4c5161;
+            text-align: center;
+            line-height: 76px;
+            margin: 0 10px;
+            font-size: 2.2rem;
+            font-weight: bold; }
+        .times-ticket .game-container .shi-closing-time .plate-time .doit span {
+          font-size: 2rem;
+          color: #4c5161;
+          line-height: 76px;
+          font-weight: bold; }
+    .times-ticket .game-container .shi-note {
+      width: 100%;
+      height: 100%; }
+      .times-ticket .game-container .shi-note .note-input {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative; }
+        .times-ticket .game-container .shi-note .note-input .input-info {
+          position: absolute;
+          background: #4c5161;
+          width: 50px;
+          height: 100%;
+          text-align: center;
+          line-height: 2.6;
+          display: inline-block;
+          color: #b6bbc6;
+          font-size: 14px; }
+        .times-ticket .game-container .shi-note .note-input .money {
+          width: 98px !important;
+          padding-left: 56px;
+          margin-right: 10px;
+          overflow: hidden; }
+        .times-ticket .game-container .shi-note .note-input .note-btn {
+          margin-right: 10px; }
+      .times-ticket .game-container .shi-note .note-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 2em 0; }
+        .times-ticket .game-container .shi-note .note-list .note-item {
+          width: 70px;
+          height: 70px;
+          background: #f7f9fa;
+          border-radius: 50%;
+          position: relative; }
+          .times-ticket .game-container .shi-note .note-list .note-item .note-icon-size {
+            font-size: 3.9rem;
+            display: inline-block;
+            position: relative; }
+            .times-ticket .game-container .shi-note .note-list .note-item .note-icon-size .note-num {
+              position: absolute;
+              top: 34.4%;
+              left: 24.8%;
+              font-size: 18px;
+              font-weight: bold; }
+          .times-ticket .game-container .shi-note .note-list .note-item .note-red {
+            color: #f4615c; }
     .times-ticket .game-container .item-game {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1264,7 +1522,8 @@ html {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+    position: relative; }
   @media (min-width: 768px) {
     html .container {
       width: 750px; } }

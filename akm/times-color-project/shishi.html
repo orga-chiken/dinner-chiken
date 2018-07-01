@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable"> 
+	  	<meta content="yes" name="apple-touch-fullscreen">
+	  	<meta content="telephone=no,email=no" name="format-detection"> 
+	    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
+		<title>重庆时时彩</title>
+		<link rel="stylesheet" type="text/css" href="../dest/font.css"/>
+    	<link rel="stylesheet" href="../dest/akm.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!--时时彩-->
+			<div class="times-ticket times-bg">
+				<!--头部-->
+				<header class="nav-bar top-bar">
+					<div class="game-bars item-bar">
+						<span class="game-menu icon-size icon-color"></span>
+					</div>
+					<div class="title item-bar">
+						<h3>重庆时时彩</h3>
+					</div>
+					<div class="login item-bar">
+						<a href=""><span class="game-mine icon-size icon-color"></span>我的</a>
+					</div>
+				</header>
+				<!--内容区-->
+				<div class="game-container">
+					<!--开奖号码,Ball.scss-->
+					<div class="shishi-winning-numbers">
+						<div class="shi-winning-warp">
+							<p class="winning-title">第 <span>20180701-043</span> 期<br>开奖号码</p>
+							<ul class="winning-num-list">
+								<li class="item-winning-num">
+									<section class="stage">
+									  <figure class="ball">
+									  	<span class="num">8</span>
+									    <span class="shadow"></span>
+									  </figure>
+									</section>
+								</li>
+								<li class="item-winning-num">
+									<section class="stage">
+									  <figure class="ball">
+									  	<span class="num">8</span>
+									    <span class="shadow"></span>
+									  </figure>
+									</section>
+								</li>
+								<li class="item-winning-num">
+									<section class="stage">
+									  <figure class="ball">
+									  	<span class="num">8</span>
+									    <span class="shadow"></span>
+									  </figure>
+									</section>
+								</li>
+								<li class="item-winning-num">
+									<section class="stage">
+									  <figure class="ball">
+									  	<span class="num">8</span>
+									    <span class="shadow"></span>
+									  </figure>
+									</section>
+								</li>
+								<li class="item-winning-num">
+									<section class="stage">
+									  <figure class="ball">
+									  	<span class="num">8</span>
+									    <span class="shadow"></span>
+									  </figure>
+									</section>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--封盘时间-->
+					<div class="shi-closing-time">
+						<p class="closing-title"><span class="cur-date">2018-07-01</span><span class="plate-num"> 070</span> 距离封盘时间</p>
+						<div class="plate-time">
+							<div class="minute">
+								<div class="item-plate">0</div>
+								<div class="item-plate">5</div>
+							</div>
+							<div class="doit"><span>：</span></div>
+							<div class="second">
+								<div class="item-plate">4</div>
+								<div class="item-plate">9</div>
+							</div>
+						</div>
+					</div>
+					<!--提交注单-->
+					<div class="shi-note">
+						<div class="note-input">
+							<span class="input-info">金额</span>
+							<input type="text" id="idNote" class="ui-input money" size="40" name="idNote" required="">
+							<a href="javascript:" class="ui-button note-btn" role="button">重置</a>
+							<a href="javascript:" class="ui-button ui-button-warning" role="button">提交注单</a>
+						</div>
+						<div class="note-list">
+							<div class="note-item"><span class="game-bet note-icon-size note-red"><b class="note-num">500</b></span></div>
+						</div>
+					</div>
+				</div>
+				<!--底部-->
+				<footer class="nav-bar footer-bar">
+					<div class="item-bar"><a href=""><span class="game-recharge icon-size icon-color"></span>充值</a></div>
+					<div class="item-bar"><a href=""><span class="game-game icon-size icon-color"></span>游戏首页</a></div>
+					<div class="item-bar"><a href=""><span class="game-set icon-size icon-color"></span>设置</a></div>
+				</footer>
+			</div>
+			<!--导航-->
+			<div class="left-navigation navigation-bg">
+				<div class="left-navigation-width">
+					<div class="navigation-menu">公共菜单</div>
+					<ul class="navigation-list">
+						<li class="navigation-item"><span class="game-hot icon-size icon-color"></span>VIP 会员</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$('.game-bars').on('click',function(){
+				$('.left-navigation').addClass('left-navigation-show');
+			});
+			$('.left-navigation').on('click',function(){
+				$('.left-navigation').removeClass('left-navigation-show');
+			})
+		</script>
+	</body>
+</html>
+

@@ -7,6 +7,52 @@
 
 
 
+/*左侧公共菜单*/
+.navigation-bg{
+    background: rgba(0,0,0,.6);
+}
+.left-navigation{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transform: translateX(-200vw);
+    transition: all .5s ease-in .01s;
+    .left-navigation-width{
+        width: 60%;
+        height: 100%;
+        background: $dark;
+        .navigation-menu{
+            height: 50px;
+            background: $light;
+            color: $dark;
+            line-height: 50px;
+            padding: 0 10px;
+            font-weight: $font-weight-mid;
+        }
+        .navigation-list{
+            .navigation-item{
+                padding: 4px 10px;
+                line-height: 1.8;
+                border-bottom: 1px solid $dark;
+                background: $color-ee;
+                color: $dark;
+                font-size: 18px;
+                display: flex;
+                .icon-color{
+                    padding-right: 12px;
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+.left-navigation-show{
+    transform: translateX(0);
+}
+
 
 
 /*时时彩*/
@@ -132,6 +178,12 @@
                 }
             }
         }
+        .game-bars{
+            display: none;
+            @media screen and (max-width: 768px){
+                display: block;
+            }
+        }
         .title{
            h3 {
                color: $gray;
@@ -171,6 +223,126 @@
             flex-wrap: wrap;
             margin: 0;
             padding: 0;
+        }
+        //重庆时时彩
+        .shishi-winning-numbers{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            padding: 1em 0 0;
+            border-bottom: 1px solid $dark;
+            margin-bottom: 3em;
+            .shi-winning-warp{
+                .winning-title{
+                    line-height: 1.8;
+                }
+                .winning-num-list{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    .item-winning-num{
+                        flex: 1 1 auto;
+                        width: 100%;
+                        height: auto;
+                        margin: 20px 10px;
+                        @extend .stage;
+                    }
+                }
+            }
+        }
+        .shi-closing-time{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .closing-title{
+                text-align: center;
+            }
+            .plate-time{
+                display: flex;
+                justify-content: center;
+                margin: 2em 0;
+                .minute,.second{
+                    display: flex;
+                    .item-plate{
+                        width: 50px;
+                        height: 80px;
+                        background: #010101;
+                        color: $dark;
+                        text-align: center;
+                        line-height: 76px;
+                        margin: 0 10px;
+                        font-size: 2.2rem;
+                        font-weight: bold;
+                    }
+                }
+                .doit span{
+                    font-size: 2rem;
+                    color: $dark;
+                    line-height: 76px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .shi-note{
+            width: 100%;
+            height: 100%;
+            .note-input{
+                display: flex;
+                position: relative;
+                .input-info{
+                    position: absolute;
+                    background: #4c5161;
+                    width: 50px;
+                    height: 100%;
+                    text-align: center;
+                    line-height: 2.6;
+                    display: inline-block;
+                    color: $silver;
+                    font-size: $font-size-small;
+                }
+                .money{
+                    width: 98px !important;
+                    padding-left: 56px;
+                    margin-right: 10px;
+                    overflow: hidden;
+                }
+                .note-btn{
+                    margin-right: 10px;
+                }
+            }
+            .note-list{
+                display: flex;
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin: 2em 0;
+                .note-item{
+                    width: 70px;
+                    height: 70px;
+                    background: #f7f9fa;
+                    border-radius: 50%;
+                    position: relative;
+                    .note-icon-size{
+                        font-size: 3.9rem;
+                        display: inline-block;
+                        position: relative;
+                        .note-num{
+                            position: absolute;
+                            top: 34.4%;
+                            left: 24.8%;
+                            font-size: $font-size-mid;
+                            font-weight: $font-weight-big;
+                        }
+                    }
+                    .note-red{
+                        color: $red;
+                    }
+                }
+            }
         }
         .item-game{
             display: flex;
@@ -237,6 +409,7 @@
         }
     }
 }
+
 /*百家乐纸牌UI*/
 .playing-card{
     width: 100%;
@@ -317,6 +490,7 @@ html {
       padding-left: 15px;
       margin-right: auto;
       margin-left: auto;
+      position: relative;
     }
     @media (min-width: 768px) {
       .container {
