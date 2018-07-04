@@ -200,6 +200,7 @@
         position: fixed;
         bottom: 0;
         left: 0;
+        z-index: 9999;
         &.item-bar{
             flex: 1 1 auto;
         }
@@ -208,6 +209,7 @@
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 9999;
     }
     .game-container{
         display: flex;
@@ -260,6 +262,7 @@
             position: relative;
             .closing-title{
                 text-align: center;
+                color: $gray;
             }
             .plate-time{
                 display: flex;
@@ -278,6 +281,12 @@
                         font-size: 2.2rem;
                         font-weight: bold;
                     }
+                    .closing-time{
+                        color: $red;
+                    }
+                    .tottery-time{
+                        color: $green;
+                    }
                 }
                 .doit span{
                     font-size: 2rem;
@@ -293,6 +302,7 @@
             .note-input{
                 display: flex;
                 position: relative;
+                height: 40px;
                 .input-info{
                     position: absolute;
                     background: #4c5161;
@@ -316,33 +326,50 @@
             }
             .note-list{
                 display: flex;
+                justify-content: space-around;
                 position: relative;
                 width: 100%;
                 height: auto;
                 margin: 2em 0;
                 .note-item{
-                    width: 70px;
-                    height: 70px;
-                    background: #f7f9fa;
-                    border-radius: 50%;
-                    position: relative;
                     .note-icon-size{
                         font-size: 3.9rem;
-                        display: inline-block;
+                        display: block;
+                        box-shadow: 0 2px 8px #14161d;
                         position: relative;
                         .note-num{
                             position: absolute;
-                            top: 34.4%;
-                            left: 24.8%;
-                            font-size: $font-size-mid;
+                            top: 39%;
+                            transform: translateY(-50%);
+                            left: 50%;
+                            transform: translateX(-50%);
+                            font-size: $font-size-small;
                             font-weight: $font-weight-big;
+                            color: $color-yello;
                         }
                     }
-                    .note-red{
-                        color: $red;
+                    .note-yellow{
+                        color: $color-yello;
+                        &:hover{
+                            color: $color-pei;
+                            transition: all .5s ease;
+                        }
                     }
                 }
             }
+        }
+        .gambling-nav{
+            height: 44px;
+            overflow: scroll;
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 50px;
+            white-space: nowrap;
+        }
+        .gambling-pannel{
+            min-height: 400px;
         }
         .item-game{
             display: flex;

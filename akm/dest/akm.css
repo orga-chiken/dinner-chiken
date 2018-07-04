@@ -42,7 +42,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #fff; }
 
 .green {
-  color: #01cf97; }
+  color: #0fb50d; }
 
 .orange {
   color: #f28c48; }
@@ -61,7 +61,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #00a5e0; }
 
 .bg-green {
-  background-color: #01cf97; }
+  background-color: #0fb50d; }
 
 .bg-orange {
   background-color: #f28c48; }
@@ -89,7 +89,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #fff; }
 
 .green {
-  color: #01cf97; }
+  color: #0fb50d; }
 
 .orange {
   color: #f28c48; }
@@ -108,7 +108,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #00a5e0; }
 
 .bg-green {
-  background-color: #01cf97; }
+  background-color: #0fb50d; }
 
 .bg-orange {
   background-color: #f28c48; }
@@ -214,7 +214,7 @@ input[type=radio] {
   color: #fff; }
 
 .green {
-  color: #01cf97; }
+  color: #0fb50d; }
 
 .orange {
   color: #f28c48; }
@@ -233,7 +233,7 @@ input[type=radio] {
   background-color: #00a5e0; }
 
 .bg-green {
-  background-color: #01cf97; }
+  background-color: #0fb50d; }
 
 .bg-orange {
   background-color: #f28c48; }
@@ -338,7 +338,7 @@ input[type=checkbox] {
   color: #fff; }
 
 .green {
-  color: #01cf97; }
+  color: #0fb50d; }
 
 .orange {
   color: #f28c48; }
@@ -357,7 +357,7 @@ input[type=checkbox] {
   background-color: #00a5e0; }
 
 .bg-green {
-  background-color: #01cf97; }
+  background-color: #0fb50d; }
 
 .bg-orange {
   background-color: #f28c48; }
@@ -425,7 +425,7 @@ input[type=checkbox] {
   color: #fff; }
 
 .green {
-  color: #01cf97; }
+  color: #0fb50d; }
 
 .orange {
   color: #f28c48; }
@@ -444,7 +444,7 @@ input[type=checkbox] {
   background-color: #00a5e0; }
 
 .bg-green {
-  background-color: #01cf97; }
+  background-color: #0fb50d; }
 
 .bg-orange {
   background-color: #f28c48; }
@@ -478,6 +478,9 @@ input[type=checkbox] {
   transition: border-color .15s, background-color .15s;
   cursor: pointer;
   overflow: visible; }
+  @media screen and (max-width: 414px) {
+    .ui-button {
+      font-size: 12px; } }
 
 .ui-button.error {
   border-color: #f4615c !important; }
@@ -526,8 +529,8 @@ div.ui-button {
 .ui-button-success.disabled,
 .ui-button-success.disabled:hover,
 .ui-button-success.ui-button-loading:hover {
-  border: 1px solid #01cf97;
-  background-color: #01cf97;
+  border: 1px solid #0fb50d;
+  background-color: #0fb50d;
   color: #fff; }
 
 .ui-button-success:hover {
@@ -591,7 +594,7 @@ div.ui-button {
   color: #fff; }
 
 .green {
-  color: #01cf97; }
+  color: #0fb50d; }
 
 .orange {
   color: #f28c48; }
@@ -610,7 +613,7 @@ div.ui-button {
   background-color: #00a5e0; }
 
 .bg-green {
-  background-color: #01cf97; }
+  background-color: #0fb50d; }
 
 .bg-orange {
   background-color: #f28c48; }
@@ -935,7 +938,7 @@ span.ui-search-right > .ui-placeholder {
   color: #fff; }
 
 .green {
-  color: #01cf97; }
+  color: #0fb50d; }
 
 .orange {
   color: #f28c48; }
@@ -954,7 +957,7 @@ span.ui-search-right > .ui-placeholder {
   background-color: #00a5e0; }
 
 .bg-green {
-  background-color: #01cf97; }
+  background-color: #0fb50d; }
 
 .bg-orange {
   background-color: #f28c48; }
@@ -1010,7 +1013,7 @@ a:hover {
 .icon-color {
   color: #a2a9b6; }
   .icon-color:hover {
-    color: #01cf97;
+    color: #0fb50d;
     -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in; }
 
@@ -1207,7 +1210,7 @@ a:hover {
             -ms-flex-align: center;
                 align-items: center; }
         .times-ticket .nav-bar .item-bar a:hover {
-          color: #01cf97;
+          color: #0fb50d;
           -webkit-transition: all .5s ease-in;
           transition: all .5s ease-in; }
     .times-ticket .nav-bar .game-bars {
@@ -1220,13 +1223,14 @@ a:hover {
       font-size: 18px;
       font-weight: 400; }
       .times-ticket .nav-bar .title h3:hover {
-        color: #01cf97;
+        color: #0fb50d;
         -webkit-transition: all .5s ease-in;
         transition: all .5s ease-in; }
   .times-ticket .footer-bar {
     position: fixed;
     bottom: 0;
-    left: 0; }
+    left: 0;
+    z-index: 9999; }
     .times-ticket .footer-bar.item-bar {
       -webkit-box-flex: 1;
           -ms-flex: 1 1 auto;
@@ -1234,7 +1238,8 @@ a:hover {
   .times-ticket .top-bar {
     position: fixed;
     top: 0;
-    left: 0; }
+    left: 0;
+    z-index: 9999; }
   .times-ticket .game-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1303,7 +1308,8 @@ a:hover {
       height: 100%;
       position: relative; }
       .times-ticket .game-container .shi-closing-time .closing-title {
-        text-align: center; }
+        text-align: center;
+        color: #a2a9b6; }
       .times-ticket .game-container .shi-closing-time .plate-time {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1326,6 +1332,10 @@ a:hover {
             margin: 0 10px;
             font-size: 2.2rem;
             font-weight: bold; }
+          .times-ticket .game-container .shi-closing-time .plate-time .minute .closing-time, .times-ticket .game-container .shi-closing-time .plate-time .second .closing-time {
+            color: #f4615c; }
+          .times-ticket .game-container .shi-closing-time .plate-time .minute .tottery-time, .times-ticket .game-container .shi-closing-time .plate-time .second .tottery-time {
+            color: #0fb50d; }
         .times-ticket .game-container .shi-closing-time .plate-time .doit span {
           font-size: 2rem;
           color: #4c5161;
@@ -1338,7 +1348,8 @@ a:hover {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        position: relative; }
+        position: relative;
+        height: 40px; }
         .times-ticket .game-container .shi-note .note-input .input-info {
           position: absolute;
           background: #4c5161;
@@ -1360,28 +1371,46 @@ a:hover {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         position: relative;
         width: 100%;
         height: auto;
         margin: 2em 0; }
-        .times-ticket .game-container .shi-note .note-list .note-item {
-          width: 70px;
-          height: 70px;
-          background: #f7f9fa;
-          border-radius: 50%;
+        .times-ticket .game-container .shi-note .note-list .note-item .note-icon-size {
+          font-size: 3.9rem;
+          display: block;
+          -webkit-box-shadow: 0 2px 8px #14161d;
+                  box-shadow: 0 2px 8px #14161d;
           position: relative; }
-          .times-ticket .game-container .shi-note .note-list .note-item .note-icon-size {
-            font-size: 3.9rem;
-            display: inline-block;
-            position: relative; }
-            .times-ticket .game-container .shi-note .note-list .note-item .note-icon-size .note-num {
-              position: absolute;
-              top: 34.4%;
-              left: 24.8%;
-              font-size: 18px;
-              font-weight: bold; }
-          .times-ticket .game-container .shi-note .note-list .note-item .note-red {
-            color: #f4615c; }
+          .times-ticket .game-container .shi-note .note-list .note-item .note-icon-size .note-num {
+            position: absolute;
+            top: 39%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+            font-size: 14px;
+            font-weight: bold;
+            color: #FEAE1B; }
+        .times-ticket .game-container .shi-note .note-list .note-item .note-yellow {
+          color: #FEAE1B; }
+          .times-ticket .game-container .shi-note .note-list .note-item .note-yellow:hover {
+            color: #009688;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease; }
+    .times-ticket .game-container .gambling-nav {
+      height: 44px;
+      overflow: scroll;
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 50px;
+      white-space: nowrap; }
+    .times-ticket .game-container .gambling-pannel {
+      min-height: 400px; }
     .times-ticket .game-container .item-game {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1408,7 +1437,7 @@ a:hover {
         transition: all .5s ease-in; }
         @media screen and (max-width: 768px) {
           .times-ticket .game-container .item-game:hover {
-            border: 4px solid #01cf97;
+            border: 4px solid #0fb50d;
             -webkit-transform: scale(1);
                     transform: scale(1);
             -webkit-transition: all .5s ease-in;
@@ -1425,7 +1454,7 @@ a:hover {
         border: 6px solid #4c5161;
         border-radius: 50%; }
         .times-ticket .game-container .item-game .game-logo-pic:hover {
-          border-color: #01cf97;
+          border-color: #0fb50d;
           -webkit-transition: all .8s ease-in;
           transition: all .8s ease-in; }
       .times-ticket .game-container .item-game .game-info-warp {
@@ -1438,7 +1467,7 @@ a:hover {
           font-weight: 400;
           padding-bottom: 1em; }
           .times-ticket .game-container .item-game .game-info-warp .game-title:hover {
-            color: #01cf97;
+            color: #0fb50d;
             -webkit-transition: all .5s ease-in;
             transition: all .5s ease-in; }
         .times-ticket .game-container .item-game .game-info-warp .game-info {

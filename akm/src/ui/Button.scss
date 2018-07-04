@@ -19,6 +19,9 @@
 	transition: border-color .15s, background-color .15s;
 	cursor: pointer;
 	overflow: visible;
+	@media screen and (max-width: 414px){
+	    font-size: 12px;
+	}
 }
 .ui-button.error {
 	border-color: $red!important;
