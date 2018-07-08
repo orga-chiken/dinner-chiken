@@ -18,6 +18,10 @@ $green: #0fb50d;          // 成功文字颜色，成功提示背景色
 $orange: #f28c48;         // 用在警示处
 $red: #f4615c;            // 出错使用
 $light: #f7f9fa;          // 很轻的灰色，常做背景色使用
+$ball-font-color: #03523e;
+$ball-bg-two: #00dba2;
+$ball-bg-three: #01cf97;
+$boall: radial-gradient(circle at 50% 120%, $ball-font-color, $ball-bg-two 80%, $ball-bg-three 100%);
 /*主色*/
 $color-zhu: #24262F;
 $color-pei: #009688;
@@ -113,4 +117,38 @@ $urlImage: 'images'!default;
 .bg-gray { background-color: $gray; }
 .bg-white { background-color: $white; }
 
+.left-navigation-show{
+    transform: translateX(0);
+}
+.jingao{
+    color: $red;
+}
+.tixing{
+    color: $green;   
+}
+.red{
+    color: $red;
+}
+.disable-pan{
+    color: $red !important;
+}
+//赌号
+.bet-number{}
+//赔率
+.bet-odds{}
+//赌注
+.bet-amount{} 
+.num-side{
+    .bet-number{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 26px;
+        display: block;
+        border-radius: 50%;
+        color: $ball-font-color;
+        font-weight: $font-weight-big;
+        background: radial-gradient(circle at 50% 120%, $ball-font-color, $ball-bg-two 80%, $ball-bg-three 100%);
+    }
+}
 

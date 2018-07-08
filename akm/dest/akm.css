@@ -78,6 +78,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .bg-white {
   background-color: #fff; }
 
+.left-navigation-show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+.jingao {
+  color: #f4615c; }
+
+.tixing {
+  color: #0fb50d; }
+
+.red {
+  color: #f4615c; }
+
+.disable-pan {
+  color: #f4615c !important; }
+
+.num-side .bet-number {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 26px;
+  display: block;
+  border-radius: 50%;
+  color: #03523e;
+  font-weight: bold;
+  background: radial-gradient(circle at 50% 120%, #03523e, #00dba2 80%, #01cf97 100%); }
+
 /**
   *  李诚，UI文件你先不要放开，我用哪个放哪个吧，我现在还没配好postcss，编译的还不全 
  */
@@ -124,6 +151,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .bg-white {
   background-color: #fff; }
+
+.left-navigation-show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+.jingao {
+  color: #f4615c; }
+
+.tixing {
+  color: #0fb50d; }
+
+.red {
+  color: #f4615c; }
+
+.disable-pan {
+  color: #f4615c !important; }
+
+.num-side .bet-number {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 26px;
+  display: block;
+  border-radius: 50%;
+  color: #03523e;
+  font-weight: bold;
+  background: radial-gradient(circle at 50% 120%, #03523e, #00dba2 80%, #01cf97 100%); }
 
 input[type=radio] {
   position: absolute;
@@ -250,6 +304,33 @@ input[type=radio] {
 .bg-white {
   background-color: #fff; }
 
+.left-navigation-show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+.jingao {
+  color: #f4615c; }
+
+.tixing {
+  color: #0fb50d; }
+
+.red {
+  color: #f4615c; }
+
+.disable-pan {
+  color: #f4615c !important; }
+
+.num-side .bet-number {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 26px;
+  display: block;
+  border-radius: 50%;
+  color: #03523e;
+  font-weight: bold;
+  background: radial-gradient(circle at 50% 120%, #03523e, #00dba2 80%, #01cf97 100%); }
+
 input[type=checkbox] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -374,6 +455,33 @@ input[type=checkbox] {
 .bg-white {
   background-color: #fff; }
 
+.left-navigation-show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+.jingao {
+  color: #f4615c; }
+
+.tixing {
+  color: #0fb50d; }
+
+.red {
+  color: #f4615c; }
+
+.disable-pan {
+  color: #f4615c !important; }
+
+.num-side .bet-number {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 26px;
+  display: block;
+  border-radius: 50%;
+  color: #03523e;
+  font-weight: bold;
+  background: radial-gradient(circle at 50% 120%, #03523e, #00dba2 80%, #01cf97 100%); }
+
 .stage, .times-ticket .game-container .shishi-winning-numbers .shi-winning-warp .winning-num-list .item-winning-num {
   width: 50px;
   height: 50px;
@@ -460,6 +568,33 @@ input[type=checkbox] {
 
 .bg-white {
   background-color: #fff; }
+
+.left-navigation-show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+.jingao {
+  color: #f4615c; }
+
+.tixing {
+  color: #0fb50d; }
+
+.red {
+  color: #f4615c; }
+
+.disable-pan {
+  color: #f4615c !important; }
+
+.num-side .bet-number {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 26px;
+  display: block;
+  border-radius: 50%;
+  color: #03523e;
+  font-weight: bold;
+  background: radial-gradient(circle at 50% 120%, #03523e, #00dba2 80%, #01cf97 100%); }
 
 .ui-button {
   display: inline-block;
@@ -638,6 +773,33 @@ div.ui-button {
 
 .bg-white {
   background-color: #fff; }
+
+.left-navigation-show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+.jingao {
+  color: #f4615c; }
+
+.tixing {
+  color: #0fb50d; }
+
+.red {
+  color: #f4615c; }
+
+.disable-pan {
+  color: #f4615c !important; }
+
+.num-side .bet-number {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 26px;
+  display: block;
+  border-radius: 50%;
+  color: #03523e;
+  font-weight: bold;
+  background: radial-gradient(circle at 50% 120%, #03523e, #00dba2 80%, #01cf97 100%); }
 
 /*disabled X for IE */
 input:not([type=search])::-ms-clear {
@@ -983,6 +1145,33 @@ span.ui-search-right > .ui-placeholder {
 .bg-white {
   background-color: #fff; }
 
+.left-navigation-show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+.jingao {
+  color: #f4615c; }
+
+.tixing {
+  color: #0fb50d; }
+
+.red {
+  color: #f4615c; }
+
+.disable-pan {
+  color: #f4615c !important; }
+
+.num-side .bet-number {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 26px;
+  display: block;
+  border-radius: 50%;
+  color: #03523e;
+  font-weight: bold;
+  background: radial-gradient(circle at 50% 120%, #03523e, #00dba2 80%, #01cf97 100%); }
+
 .com-line {
   width: 50%;
   height: 1px;
@@ -1070,19 +1259,6 @@ a:hover {
       .left-navigation .left-navigation-width .navigation-list .navigation-item .icon-color {
         padding-right: 12px;
         color: #f4615c; }
-
-.left-navigation-show {
-  -webkit-transform: translateX(0);
-          transform: translateX(0); }
-
-.jingao {
-  color: #f4615c; }
-
-.tixing {
-  color: #0fb50d; }
-
-.red {
-  color: #f4615c; }
 
 .main {
   width: 100%;
@@ -1519,6 +1695,20 @@ a:hover {
                 line-height: 44px;
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px; }
+              .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main .pannel-card .item .sub-title {
+                background: #1f212b !important; }
+                .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main .pannel-card .item .sub-title .bet-number-title {
+                  -webkit-box-flex: 1;
+                      -ms-flex: 1 1 20%;
+                          flex: 1 1 20%; }
+                .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main .pannel-card .item .sub-title .bet-odds {
+                  -webkit-box-flex: 1;
+                      -ms-flex: 1 1 30%;
+                          flex: 1 1 30%; }
+                .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main .pannel-card .item .sub-title .bet-amount {
+                  -webkit-box-flex: 1;
+                      -ms-flex: 1 1 50%;
+                          flex: 1 1 50%; }
               .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main .pannel-card .item .pannel-content {
                 display: -webkit-box;
                 display: -ms-flexbox;

@@ -49,25 +49,6 @@
         }
     }
 }
-.left-navigation-show{
-    transform: translateX(0);
-}
-
-.jingao{
-    color: $red;
-}
-.tixing{
-    color: $green;   
-}
-.red{
-    color: $red;
-}
-//赌号
-.bet-number{}
-//赔率
-.bet-odds{}
-//赌注
-.bet-amount{} 
 
 
 .main{
@@ -89,6 +70,7 @@
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
+        
         .pannel-content{
             display: flex;
             flex-direction: row;
@@ -469,6 +451,18 @@
                                 line-height: 44px;
                                 border-top-left-radius: 20px;
                                 border-top-right-radius: 20px;
+                            }
+                            .sub-title{
+                                background: $dark-more-deeper !important;
+                                .bet-number-title{
+                                    flex: 1 1 20%;
+                                }
+                                .bet-odds{
+                                    flex: 1 1 30%;
+                                }
+                                .bet-amount{
+                                    flex: 1 1 50%;
+                                }
                             }
                             .pannel-content{
                                 display: flex;
