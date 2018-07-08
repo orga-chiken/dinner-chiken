@@ -53,6 +53,53 @@
     transform: translateX(0);
 }
 
+.jingao{
+    color: $red;
+}
+.tixing{
+    color: $green;   
+}
+.red{
+    color: $red;
+}
+//赌号
+.bet-number{}
+//赔率
+.bet-odds{}
+//赌注
+.bet-amount{} 
+
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 15px 0;
+    .pannel-card{
+        background: $dark-deeper;
+        color: $silver;
+        border-radius: 20px;
+        .pannel-title{
+            text-align: left;
+            color: $silver;
+            background: $dark;
+            padding: 0 15px;
+            height: 50px;
+            line-height: 44px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .pannel-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            padding: 15px;
+        }
+    }
+}
+
 
 
 /*时时彩*/
@@ -335,6 +382,7 @@
                     .note-icon-size{
                         font-size: 3.9rem;
                         display: block;
+                        border-radius: 50%;
                         box-shadow: 0 2px 8px #14161d;
                         position: relative;
                         .note-num{
@@ -365,11 +413,90 @@
             overflow-x: auto;
             overflow-y: hidden;
             -webkit-overflow-scrolling: touch;
-            padding-bottom: 50px;
+            padding-bottom: 18px;
             white-space: nowrap;
+            &::-webkit-scrollbar {
+                display: none;
+            }
         }
         .gambling-pannel{
-            min-height: 400px;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .gambling-pannel-item{
+                display: none;
+                .card{
+                    min-height: 100%;
+                    .content{
+                        background: $dark;
+                        color: $silver;
+                        border-radius: 20px;
+                        .item{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            flex-wrap: nowrap;
+                            height: 50px;
+                            line-height: 44px;
+                            padding: 0 15px;
+                            p{
+                                margin-bottom: 0;
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+                .main{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    padding: 15px 0;
+                    .pannel-card{
+                        margin: 15px 0;
+                        &:last-child{
+                            margin-bottom: 50px;
+                        }
+                        .item{
+                            background: $dark-deeper;
+                            color: $silver;
+                            border-radius: 20px;
+                            .pannel-title{
+                                text-align: left;
+                                color: $color-gambling-deeper;
+                                background: $dark;
+                                padding: 0 15px;
+                                height: 50px;
+                                line-height: 44px;
+                                border-top-left-radius: 20px;
+                                border-top-right-radius: 20px;
+                            }
+                            .pannel-content{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                                flex-wrap: nowrap;
+                                padding: 15px;
+                                &:hover{
+                                    background: $dark-more-deeper;
+                                    box-shadow: 0 2px 4px $dark-more-deeper;
+                                    border-color: $dark;
+                                    transition: all .5s ease-in;
+                                }
+                                &:last-child:hover{
+                                    border-bottom-left-radius: 20px;
+                                    border-bottom-right-radius: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .item-active{
+                display: block;
+                min-height: 400px;
+                animation: fadeIn 0.5s ease;
+            }
         }
         .item-game{
             display: flex;

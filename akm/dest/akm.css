@@ -482,6 +482,15 @@ input[type=checkbox] {
     .ui-button {
       font-size: 12px; } }
 
+.active {
+  background-color: #009688;
+  border-color: #0d9a8d;
+  color: #fff !important; }
+  .active:hover {
+    background-color: #009688;
+    border-color: #0d9a8d;
+    color: #fff; }
+
 .ui-button.error {
   border-color: #f4615c !important; }
 
@@ -1066,6 +1075,51 @@ a:hover {
   -webkit-transform: translateX(0);
           transform: translateX(0); }
 
+.jingao {
+  color: #f4615c; }
+
+.tixing {
+  color: #0fb50d; }
+
+.red {
+  color: #f4615c; }
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 15px 0; }
+  .main .pannel-card {
+    background: #393d49;
+    color: #b6bbc6;
+    border-radius: 20px; }
+    .main .pannel-card .pannel-title {
+      text-align: left;
+      color: #b6bbc6;
+      background: #4c5161;
+      padding: 0 15px;
+      height: 50px;
+      line-height: 44px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px; }
+    .main .pannel-card .pannel-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      padding: 15px; }
+
 /*时时彩*/
 .times-ticket {
   padding: 8em;
@@ -1380,6 +1434,7 @@ a:hover {
         .times-ticket .game-container .shi-note .note-list .note-item .note-icon-size {
           font-size: 3.9rem;
           display: block;
+          border-radius: 50%;
           -webkit-box-shadow: 0 2px 8px #14161d;
                   box-shadow: 0 2px 8px #14161d;
           position: relative; }
@@ -1407,10 +1462,95 @@ a:hover {
       overflow-x: auto;
       overflow-y: hidden;
       -webkit-overflow-scrolling: touch;
-      padding-bottom: 50px;
+      padding-bottom: 18px;
       white-space: nowrap; }
+      .times-ticket .game-container .gambling-nav::-webkit-scrollbar {
+        display: none; }
     .times-ticket .game-container .gambling-pannel {
-      min-height: 400px; }
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .times-ticket .game-container .gambling-pannel .gambling-pannel-item {
+        display: none; }
+        .times-ticket .game-container .gambling-pannel .gambling-pannel-item .card {
+          min-height: 100%; }
+          .times-ticket .game-container .gambling-pannel .gambling-pannel-item .card .content {
+            background: #4c5161;
+            color: #b6bbc6;
+            border-radius: 20px; }
+            .times-ticket .game-container .gambling-pannel .gambling-pannel-item .card .content .item {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                      flex-direction: row;
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between;
+              -ms-flex-wrap: nowrap;
+                  flex-wrap: nowrap;
+              height: 50px;
+              line-height: 44px;
+              padding: 0 15px; }
+              .times-ticket .game-container .gambling-pannel .gambling-pannel-item .card .content .item p {
+                margin-bottom: 0;
+                font-size: 1.1rem; }
+        .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          padding: 15px 0; }
+          .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main .pannel-card {
+            margin: 15px 0; }
+            .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main .pannel-card:last-child {
+              margin-bottom: 50px; }
+            .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main .pannel-card .item {
+              background: #393d49;
+              color: #b6bbc6;
+              border-radius: 20px; }
+              .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main .pannel-card .item .pannel-title {
+                text-align: left;
+                color: #1f212b;
+                background: #4c5161;
+                padding: 0 15px;
+                height: 50px;
+                line-height: 44px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px; }
+              .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main .pannel-card .item .pannel-content {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        flex-direction: row;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                padding: 15px; }
+                .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main .pannel-card .item .pannel-content:hover {
+                  background: #1f212b;
+                  -webkit-box-shadow: 0 2px 4px #1f212b;
+                          box-shadow: 0 2px 4px #1f212b;
+                  border-color: #4c5161;
+                  -webkit-transition: all .5s ease-in;
+                  transition: all .5s ease-in; }
+                .times-ticket .game-container .gambling-pannel .gambling-pannel-item .main .pannel-card .item .pannel-content:last-child:hover {
+                  border-bottom-left-radius: 20px;
+                  border-bottom-right-radius: 20px; }
+      .times-ticket .game-container .gambling-pannel .item-active {
+        display: block;
+        min-height: 400px;
+        -webkit-animation: fadeIn 0.5s ease;
+                animation: fadeIn 0.5s ease; }
     .times-ticket .game-container .item-game {
       display: -webkit-box;
       display: -ms-flexbox;

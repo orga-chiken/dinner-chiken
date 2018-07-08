@@ -23,6 +23,16 @@
 	    font-size: 12px;
 	}
 }
+.active{
+    background-color: $color-pei;
+    border-color: $color-pei-hover;
+    color: $white !important;
+    &:hover{
+        background-color: $color-pei;
+        border-color: $color-pei-hover;
+        color: $white;
+    }
+}
 .ui-button.error {
 	border-color: $red!important;
 }
